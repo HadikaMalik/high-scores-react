@@ -1,9 +1,12 @@
 import React from "react";
 
-const PlayerScore = ({ name, score }) => {
+const PlayerScore = ({ playerName, score }) => {
     return (
         <>
-            <span>{name}</span>: <span>{score}</span>
+            <tr>
+                <td>{playerName}</td>
+                <td>{score}</td>
+            </tr>
         </>
     )
 }

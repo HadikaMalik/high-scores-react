@@ -1,14 +1,22 @@
 import React from "react";
-import PlayerScore from "./PlayerScore";
 
 const HighScoreTable = ({ country }) => {
     return (
         <>
-            <h2>{country.name}</h2>
-            <div>
-                {country.scores.map((player, index) => (
-                    <PlayerScore key={index} name={player.n} score={player.s} />
-                ))}
+            <div className="box">
+                <h2 className="sub-heading">High scores: {country.name}</h2>
+                <table>
+                    <tbody>
+                        {country.scores.map((score, index) => {
+                            return (
+                                <tr key={index}>
+                                    <td>{score.n}</td>
+                                    <td>{score.s}</td>
+                                </tr>
+                            )
+                        })}
+                    </tbody>
+                </table>
             </div>
         </>
     )
