@@ -10,7 +10,7 @@ const HighScoreTable = ({ country }) => {
                         {country.scores.map((score, index) => {
                             return (
                                 <tr key={index}>
-                                    <td>{score.n}</td>
+                                    <td>{score.n.toUpperCase()}</td>
                                     <td>{score.s}</td>
                                 </tr>
                             )
