@@ -1,7 +1,13 @@
 import React from "react";
 
-const HighScoreTable = ({ country }) => {
-    const sortedScores = [...country.scores].sort((a,b) => b.s - a.s)
+const HighScoreTable = ({ country, sortOrder }) => {
+    const sortedScores = [...country.scores].sort((a, b) => {
+        if (sortOrder === 'asc') {
+            return a.s - b.s;
+        } else {
+            return b.s - a.s;
+        }
+    })
     return (
         <>
             <div className="box">
