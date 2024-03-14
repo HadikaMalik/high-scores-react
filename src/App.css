@@ -62,3 +62,18 @@ td{
   margin-bottom: 30px;
   background-color: #b8dbd9;
 }
+
+.toggle-button {
+  position: fixed; 
+  top: 15px;
+  left: 340px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: #b8dbd9;
+  border: #586f7c solid 2px;
+  border-radius: 10px ;
+  box-shadow: #586f7c 0px 0px 5px 2px;
+  font-size: large;
+}
+
+
